@@ -21,12 +21,24 @@ databases = {
 }
 
 applications  = {
-  catalogue   = {}
-  user        = {}
-  cart        = {}
-  shipping    = {}
-  payment     = {}
-  frontend    = {}
+  catalogue   = {
+    rgname = "ukwest"
+  }
+  user        = {
+    rgname = "ukwest"
+  }
+  cart        = {
+    rgname = "ukwest"
+  }
+  shipping    = {
+    rgname = "ukwest"
+  }
+  payment     = {
+    rgname = "ukwest"
+  }
+  frontend    = {
+    rgname = "ukwest"
+  }
 }
 
 
