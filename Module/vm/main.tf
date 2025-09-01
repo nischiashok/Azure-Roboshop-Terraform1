@@ -25,7 +25,7 @@ resource "azurerm_network_interface_security_group_association" "nsg-attach" {
 
 resource "azurerm_virtual_machine" "vm" {
   name                          = var.name
-  location                      = data.azurerm_resource_group.rg.location
+  location                      = var.rg_location
   resource_group_name           = var.rg_name
   network_interface_ids = [azurerm_network_interface.privateip.id]
   vm_size                       = "Standard_B2s"
