@@ -1,13 +1,13 @@
 resource "azurerm_public_ip" "publicip" {
   name                = var.name
   resource_group_name = var.rg_name
-  location            = data.azurerm_resource_group.rg.location
+  location            = var.rg_location
   allocation_method   = "Static"
 }
 
 resource "azurerm_network_interface" "privateip" {
   name                = var.name
-  location            = data.azurerm_resource_group.rg.location
+  location            = var.rg_location
   resource_group_name = var.rg_name
 
   ip_configuration {
